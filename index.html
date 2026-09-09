@@ -2,167 +2,180 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>GSOC Global Risk Hub</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>GSOC Disaster Portal</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <header>
-    <h1>GSOC Global Risk Hub</h1>
-    <p>Quick Access to Global Risk Information</p>
+  <header class="site-header">
+
+    <div class="header-content">
+
+      <h1>GSOC Disaster Portal</h1>
+
+      <p>
+        Quick Access to Disaster Information
+      </p>
+
+    </div>
+
   </header>
 
-  <main>
 
-    <!-- Taiwan -->
-    <section class="country-section">
+  <main class="main-content">
 
-      <h2>FOR TAIWAN</h2>
+    <section class="intro-section">
 
-      <div class="card-container">
+      <p class="section-label">
+        SELECT DISASTER TYPE
+      </p>
 
-        <a
-          href="https://www.cwa.gov.tw/"
-          target="_blank"
-          class="card"
-        >
-          <div class="icon">🌦️</div>
+      <h2>
+        What do you want to monitor?
+      </h2>
 
-          <h3>CWA</h3>
-
-          <p>Taiwan Weather</p>
-        </a>
-
-
-        <a
-          href="https://www.cwa.gov.tw/V8/E/E/index.html"
-          target="_blank"
-          class="card"
-        >
-          <div class="icon">🌏</div>
-
-          <h3>Earthquake</h3>
-
-          <p>Taiwan Earthquake Information</p>
-        </a>
-
-
-        <a
-          href="https://www.cwa.gov.tw/V8/E/P/Typhoon/TY_NEWS.html"
-          target="_blank"
-          class="card"
-        >
-          <div class="icon">🌀</div>
-
-          <h3>Typhoon</h3>
-
-          <p>Typhoon Information</p>
-        </a>
-
-      </div>
+      <p class="section-description">
+        Select a disaster type to access country-specific information sources.
+      </p>
 
     </section>
 
 
-    <!-- Japan -->
-    <section class="country-section">
+    <section class="disaster-grid">
 
-      <h2>FOR JAPAN</h2>
+      <!-- Earthquake -->
+      <a
+        href="earthquake.html"
+        class="disaster-card"
+      >
 
-      <div class="card-container">
+        <div class="disaster-icon">
+          🌏
+        </div>
 
-        <a
-          href="https://www.jma.go.jp/"
-          target="_blank"
-          class="card"
-        >
-          <div class="icon">🇯🇵</div>
+        <div class="disaster-text">
 
-          <h3>JMA</h3>
+          <h3>
+            지진
+          </h3>
 
-          <p>Japan Meteorological Agency</p>
-        </a>
+          <p>
+            Earthquake
+          </p>
 
+        </div>
 
-        <a
-          href="https://www.jma.go.jp/bosai/map.html#contents=earthquake_map"
-          target="_blank"
-          class="card"
-        >
-          <div class="icon">🌏</div>
+        <span class="arrow">
+          →
+        </span>
 
-          <h3>Earthquake</h3>
-
-          <p>Japan Earthquake Information</p>
-        </a>
+      </a>
 
 
-        <a
-          href="https://www.jma.go.jp/bosai/map.html#contents=tsunami"
-          target="_blank"
-          class="card"
-        >
-          <div class="icon">🌊</div>
+      <!-- Typhoon -->
+      <a
+        href="typhoon.html"
+        class="disaster-card"
+      >
 
-          <h3>Tsunami</h3>
+        <div class="disaster-icon">
+          🌀
+        </div>
 
-          <p>Tsunami Information</p>
-        </a>
+        <div class="disaster-text">
 
-      </div>
+          <h3>
+            태풍
+          </h3>
 
-    </section>
+          <p>
+            Typhoon
+          </p>
 
+        </div>
 
-    <!-- Global -->
-    <section class="country-section">
+        <span class="arrow">
+          →
+        </span>
 
-      <h2>GLOBAL SOURCES</h2>
-
-      <div class="card-container">
-
-        <a
-          href="https://earthquake.usgs.gov/"
-          target="_blank"
-          class="card"
-        >
-          <div class="icon">🌎</div>
-
-          <h3>USGS</h3>
-
-          <p>Global Earthquakes</p>
-        </a>
+      </a>
 
 
-        <a
-          href="https://www.gdacs.org/"
-          target="_blank"
-          class="card"
-        >
-          <div class="icon">🚨</div>
+      <!-- Heavy Rain -->
+      <a
+        href="rain.html"
+        class="disaster-card"
+      >
 
-          <h3>GDACS</h3>
+        <div class="disaster-icon">
+          🌧️
+        </div>
 
-          <p>Global Disaster Alerts</p>
-        </a>
+        <div class="disaster-text">
 
-      </div>
+          <h3>
+            호우
+          </h3>
+
+          <p>
+            Heavy Rain
+          </p>
+
+        </div>
+
+        <span class="arrow">
+          →
+        </span>
+
+      </a>
+
+
+      <!-- Heavy Snow -->
+      <a
+        href="snow.html"
+        class="disaster-card"
+      >
+
+        <div class="disaster-icon">
+          ❄️
+        </div>
+
+        <div class="disaster-text">
+
+          <h3>
+            대설
+          </h3>
+
+          <p>
+            Heavy Snow
+          </p>
+
+        </div>
+
+        <span class="arrow">
+          →
+        </span>
+
+      </a>
 
     </section>
 
   </main>
 
 
-  <footer>
-    <p>GSOC Global Risk Hub</p>
+  <footer class="site-footer">
+
+    GSOC Disaster Portal
+
   </footer>
-
-
-  <script src="script.js"></script>
 
 </body>
 </html>
