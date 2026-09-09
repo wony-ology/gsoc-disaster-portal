@@ -15,119 +15,84 @@ body {
     "Segoe UI",
     Arial,
     sans-serif;
-
   background-color: #f4f6f8;
-
   color: #1f2937;
 }
-
 
 /* =========================
    Header
 ========================= */
-
 .site-header {
   background-color: #ffffff;
-
   border-bottom: 1px solid #e5e7eb;
 }
-
 .header-content {
   max-width: 1100px;
-
   margin: 0 auto;
-
   padding: 32px 24px;
 }
 
 .site-header h1 {
   margin: 0;
-
   font-size: 28px;
-
   font-weight: 700;
-
   letter-spacing: -0.5px;
 }
 
 .site-header p {
   margin: 8px 0 0;
-
   font-size: 14px;
-
   color: #6b7280;
 }
-
 
 /* =========================
    Main
 ========================= */
-
 .main-content {
   max-width: 1100px;
-
   margin: 0 auto;
-
   padding: 56px 24px 80px;
 }
-
 
 /* =========================
    Intro
 ========================= */
-
 .intro-section {
   margin-bottom: 32px;
 }
 
 .section-label {
   margin: 0 0 10px;
-
   font-size: 12px;
-
   font-weight: 700;
-
   color: #6b7280;
-
   letter-spacing: 1.5px;
 }
 
 .intro-section h2 {
   margin: 0;
-
   font-size: 30px;
-
   font-weight: 700;
-
   letter-spacing: -0.7px;
 }
 
 .section-description {
   margin: 12px 0 0;
-
   max-width: 600px;
-
   font-size: 15px;
-
   line-height: 1.6;
-
   color: #6b7280;
 }
-
 
 /* =========================
    Disaster Grid
 ========================= */
-
 .disaster-grid {
   display: grid;
-
   grid-template-columns:
     repeat(2, minmax(0, 1fr));
-
   gap: 20px;
 }
-
 
 /* =========================
    Disaster Card
@@ -135,106 +100,77 @@ body {
 
 .disaster-card {
   display: flex;
-
   align-items: center;
-
   gap: 18px;
-
   min-height: 145px;
-
   padding: 26px;
-
   background-color: #ffffff;
-
   border: 1px solid #e5e7eb;
-
   border-radius: 14px;
-
   text-decoration: none;
-
   color: inherit;
-
   box-shadow:
     0 2px 6px rgba(0, 0, 0, 0.04);
-
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease,
     border-color 0.2s ease;
 }
 
-
 /* 마우스 올렸을 때 */
-
 .disaster-card:hover {
   transform: translateY(-4px);
-
   border-color: #cbd5e1;
-
   box-shadow:
     0 10px 24px rgba(0, 0, 0, 0.09);
 }
 
-
 /* =========================
    Icon
 ========================= */
-
 .disaster-icon {
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
   width: 64px;
-
   height: 64px;
-
   flex-shrink: 0;
-
   background-color: #f3f4f6;
-
   border-radius: 14px;
-
   font-size: 34px;
 }
 
+.disaster-icon img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
 
 /* =========================
    Text
 ========================= */
-
 .disaster-text {
   flex: 1;
 }
 
 .disaster-text h3 {
   margin: 0;
-
   font-size: 21px;
-
   font-weight: 700;
 }
 
 .disaster-text p {
   margin: 6px 0 0;
-
   font-size: 14px;
-
   color: #6b7280;
 }
-
 
 /* =========================
    Arrow
 ========================= */
-
 .arrow {
   font-size: 22px;
-
   color: #9ca3af;
-
   transition:
     transform 0.2s ease;
 }
@@ -243,62 +179,44 @@ body {
   transform: translateX(4px);
 }
 
-
 /* =========================
    Footer
 ========================= */
-
 .site-footer {
   padding: 28px;
-
   text-align: center;
-
   font-size: 12px;
-
   color: #9ca3af;
 }
-
 
 /* =========================
    Tablet / Mobile
 ========================= */
-
 @media (max-width: 700px) {
-
   .main-content {
     padding: 40px 18px 60px;
   }
-
   .header-content {
     padding: 24px 18px;
   }
-
   .site-header h1 {
     font-size: 23px;
   }
-
   .intro-section h2 {
     font-size: 25px;
   }
-
   .disaster-grid {
     grid-template-columns: 1fr;
   }
-
   .disaster-card {
     min-height: 120px;
-
     padding: 20px;
   }
-
   .disaster-icon {
     width: 56px;
-
     height: 56px;
-
     font-size: 30px;
   }
-
 }
 
 /* =========================
@@ -307,167 +225,112 @@ body {
 
 .back-link {
   display: inline-block;
-
   margin-bottom: 22px;
-
   font-size: 13px;
-
   font-weight: 700;
-
   color: #6b7280;
-
   text-decoration: none;
-
   letter-spacing: 0.5px;
-
   transition: color 0.2s ease;
 }
-
 
 .back-link:hover {
   color: #111827;
 }
 
-
 .page-title {
   display: flex;
-
   align-items: center;
-
   gap: 16px;
 }
 
-
 .page-icon {
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
   width: 58px;
-
   height: 58px;
-
   flex-shrink: 0;
-
   background-color: transparent;
-
   border-radius: 13px;
-
   font-size: 31px;
 }
 
-
 .page-title h1 {
   margin: 0;
-
   font-size: 28px;
 }
 
-
 .page-title p {
   margin: 6px 0 0;
-
   font-size: 14px;
-
   color: #6b7280;
 }
-
 
 /* =========================
    Country List
 ========================= */
-
 .country-list {
   display: flex;
-
   flex-direction: column;
-
   gap: 14px;
 }
-
 
 /* =========================
    Country Accordion
 ========================= */
-
 .country-box {
   overflow: hidden;
-
   background-color: #ffffff;
-
   border: 1px solid #e5e7eb;
-
   border-radius: 12px;
-
   box-shadow:
     0 2px 6px rgba(0, 0, 0, 0.04);
 }
 
-
 .country-box summary {
   display: flex;
-
   align-items: center;
-
   justify-content: space-between;
-
   padding: 20px 22px;
-
   cursor: pointer;
-
   list-style: none;
-
   transition:
     background-color 0.2s ease;
 }
-
 
 .country-box summary::-webkit-details-marker {
   display: none;
 }
 
-
 .country-box summary:hover {
   background-color: #f9fafb;
 }
 
-
 .country-name {
   font-size: 15px;
-
   font-weight: 700;
-
   letter-spacing: 0.3px;
 }
-
 
 /* =========================
    Accordion +
 ========================= */
-
 .country-arrow {
   font-size: 23px;
-
   font-weight: 400;
-
   color: #9ca3af;
-
   transition:
     transform 0.2s ease;
 }
-
 
 .country-box[open] .country-arrow {
   transform: rotate(45deg);
 }
 
-
 /* =========================
    Country Content
 ========================= */
-
 .country-content {
   padding:
     0
@@ -475,153 +338,103 @@ body {
     22px;
 }
 
-
 /* =========================
    Source Grid
 ========================= */
-
 .source-grid {
   display: grid;
-
   grid-template-columns:
     repeat(3, minmax(0, 1fr));
-
   gap: 14px;
 }
-
 
 /* =========================
    Source Card
 ========================= */
-
 .source-card {
   display: block;
-
   min-height: 125px;
-
   padding: 20px;
-
   background-color: #f8fafc;
-
   border: 1px solid #e5e7eb;
-
   border-radius: 10px;
-
   text-decoration: none;
-
   color: inherit;
-
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease,
     border-color 0.2s ease;
 }
 
-
 .source-card:hover {
   transform: translateY(-3px);
-
   border-color: #cbd5e1;
-
   box-shadow:
     0 6px 16px rgba(0, 0, 0, 0.07);
 }
 
-
 .source-top {
   display: flex;
-
   align-items: flex-start;
-
   justify-content: space-between;
-
   gap: 12px;
 }
 
-
 .source-card h3 {
   margin: 0;
-
   font-size: 16px;
-
   line-height: 1.4;
 }
 
-
 .source-card p {
   margin: 8px 0 12px;
-
   font-size: 13px;
-
   line-height: 1.5;
-
   color: #6b7280;
 }
 
-
 .external-arrow {
   flex-shrink: 0;
-
   color: #9ca3af;
-
   font-size: 16px;
 }
-
 
 /* =========================
    Source Type
 ========================= */
-
 .source-type {
   display: inline-block;
-
   padding: 4px 8px;
-
   background-color: #ffffff;
-
   border: 1px solid #e5e7eb;
-
   border-radius: 6px;
-
   font-size: 10px;
-
   font-weight: 700;
-
   color: #6b7280;
-
   letter-spacing: 0.3px;
 }
-
 
 /* =========================
    Mobile
 ========================= */
-
 @media (max-width: 700px) {
-
   .page-icon {
     width: 52px;
-
     height: 52px;
-
     font-size: 28px;
   }
-
 
   .page-title h1 {
     font-size: 23px;
   }
-
-
+  
   .source-grid {
     grid-template-columns: 1fr;
   }
 
-
   .country-box summary {
     padding: 18px;
   }
-
 
   .country-content {
     padding:
@@ -629,13 +442,11 @@ body {
       18px
       18px;
   }
-
 }
 
 /* =========================
    Accordion Open Animation
 ========================= */
-
 .country-content {
   transform-origin: top;
 }
@@ -643,174 +454,118 @@ body {
 /* =========================
    Common Tools
 ========================= */
-
 .common-section {
   margin-top: 64px;
-
   padding-top: 42px;
-
   border-top: 1px solid #e5e7eb;
 }
-
 
 .common-header {
   margin-bottom: 30px;
 }
 
-
 .common-header h2 {
   margin: 0;
-
   font-size: 26px;
-
   font-weight: 700;
-
   letter-spacing: -0.5px;
 }
-
 
 /* =========================
    Tool Group
 ========================= */
-
 .tool-group {
   margin-top: 32px;
 }
 
-
 .tool-group-title {
   margin: 0 0 14px;
-
   font-size: 12px;
-
   font-weight: 700;
-
   color: #6b7280;
-
   letter-spacing: 1.3px;
 }
-
 
 /* =========================
    Common Grid
 ========================= */
-
 .common-grid {
   display: grid;
-
   grid-template-columns:
     repeat(2, minmax(0, 1fr));
-
   gap: 14px;
 }
-
 
 /* =========================
    Common Card
 ========================= */
-
 .common-card {
   display: flex;
-
   align-items: center;
-
   gap: 16px;
-
   min-height: 105px;
-
   padding: 20px;
-
   background-color: #ffffff;
-
   border: 1px solid #e5e7eb;
-
   border-radius: 12px;
-
   text-decoration: none;
-
   color: inherit;
-
   box-shadow:
     0 2px 6px rgba(0, 0, 0, 0.04);
-
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease,
     border-color 0.2s ease;
 }
 
-
 .common-card:hover {
   transform: translateY(-3px);
-
   border-color: #cbd5e1;
-
   box-shadow:
     0 8px 18px rgba(0, 0, 0, 0.07);
 }
 
-
 /* =========================
    Common Icon
 ========================= */
-
 .common-icon {
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
   width: 46px;
-
   height: 46px;
-
   flex-shrink: 0;
-
   font-size: 25px;
 }
-
 
 /* =========================
    Common Text
 ========================= */
-
 .common-text {
   flex: 1;
 }
 
-
 .common-text h4 {
   margin: 0;
-
   font-size: 15px;
-
   font-weight: 700;
 }
 
-
 .common-text p {
   margin: 6px 0 0;
-
   font-size: 12px;
-
   line-height: 1.5;
-
   color: #6b7280;
 }
 
 /* =========================
    Common Mobile
 ========================= */
-
 @media (max-width: 700px) {
-
   .common-section {
     margin-top: 48px;
-
     padding-top: 34px;
   }
-
 
   .common-grid {
     grid-template-columns: 1fr;
