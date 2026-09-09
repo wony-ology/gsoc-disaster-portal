@@ -1,0 +1,1 @@
+console.log("GSOC Global Risk Hub loaded");
