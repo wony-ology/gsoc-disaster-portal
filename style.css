@@ -637,8 +637,11 @@ body {
 ========================= */
 
 .country-content {
-  animation: accordionOpen 0.28s ease;
   transform-origin: top;
+}
+
+.country-box[open] .country-content {
+  animation: accordionOpen 0.28s ease;
 }
 
 @keyframes accordionOpen {
