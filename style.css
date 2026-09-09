@@ -799,28 +799,6 @@ body {
   color: #6b7280;
 }
 
-
-/* =========================
-   Disabled Common Card
-========================= */
-
-.common-card-disabled {
-  cursor: default;
-
-  opacity: 0.65;
-}
-
-
-.common-card-disabled:hover {
-  transform: none;
-
-  border-color: #e5e7eb;
-
-  box-shadow:
-    0 2px 6px rgba(0, 0, 0, 0.04);
-}
-
-
 /* =========================
    Common Mobile
 ========================= */
