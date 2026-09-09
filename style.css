@@ -639,3 +639,203 @@ body {
 .country-content {
   transform-origin: top;
 }
+
+/* =========================
+   Common Tools
+========================= */
+
+.common-section {
+  margin-top: 64px;
+
+  padding-top: 42px;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+
+.common-header {
+  margin-bottom: 30px;
+}
+
+
+.common-header h2 {
+  margin: 0;
+
+  font-size: 26px;
+
+  font-weight: 700;
+
+  letter-spacing: -0.5px;
+}
+
+
+/* =========================
+   Tool Group
+========================= */
+
+.tool-group {
+  margin-top: 32px;
+}
+
+
+.tool-group-title {
+  margin: 0 0 14px;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  color: #6b7280;
+
+  letter-spacing: 1.3px;
+}
+
+
+/* =========================
+   Common Grid
+========================= */
+
+.common-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 14px;
+}
+
+
+/* =========================
+   Common Card
+========================= */
+
+.common-card {
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  min-height: 105px;
+
+  padding: 20px;
+
+  background-color: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 12px;
+
+  text-decoration: none;
+
+  color: inherit;
+
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.04);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+
+.common-card:hover {
+  transform: translateY(-3px);
+
+  border-color: #cbd5e1;
+
+  box-shadow:
+    0 8px 18px rgba(0, 0, 0, 0.07);
+}
+
+
+/* =========================
+   Common Icon
+========================= */
+
+.common-icon {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 46px;
+
+  height: 46px;
+
+  flex-shrink: 0;
+
+  font-size: 25px;
+}
+
+
+/* =========================
+   Common Text
+========================= */
+
+.common-text {
+  flex: 1;
+}
+
+
+.common-text h4 {
+  margin: 0;
+
+  font-size: 15px;
+
+  font-weight: 700;
+}
+
+
+.common-text p {
+  margin: 6px 0 0;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+
+  color: #6b7280;
+}
+
+
+/* =========================
+   Disabled Common Card
+========================= */
+
+.common-card-disabled {
+  cursor: default;
+
+  opacity: 0.65;
+}
+
+
+.common-card-disabled:hover {
+  transform: none;
+
+  border-color: #e5e7eb;
+
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+
+/* =========================
+   Common Mobile
+========================= */
+
+@media (max-width: 700px) {
+
+  .common-section {
+    margin-top: 48px;
+
+    padding-top: 34px;
+  }
+
+
+  .common-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
