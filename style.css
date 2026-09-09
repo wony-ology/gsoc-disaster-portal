@@ -585,6 +585,11 @@ body {
     font-size: 28px;
   }
 
+.page-icon img {
+  width: 42px;
+  height: 42px;
+}
+
   .page-title h1 {
     font-size: 23px;
   }
