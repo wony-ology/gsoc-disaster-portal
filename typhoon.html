@@ -3,175 +3,143 @@
 
 <head>
   <meta charset="UTF-8">
-
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1.0"
   >
-
   <title>Typhoon | GSOC Disaster Portal</title>
-
   <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
 
   <!-- =========================
        Header
   ========================== -->
-
   <header class="site-header">
-
     <div class="header-content">
-
       <a
         href="index.html"
         class="back-link"
       >
         ← HOME
       </a>
-
       <div class="page-title">
-
         <div class="page-icon">
-          🌀
+          <img
+            src="images/typhoon.png"
+            alt="Typhoon pictogram"
+          >
         </div>
-
-        <div>
-
+        <div
           <h1>
             Typhoon
           </h1>
-
           <p>
             Quick Access to Typhoon Information
           </p>
-
         </div>
-
       </div>
-
     </div>
-
   </header>
-
 
   <!-- =========================
        Main
   ========================== -->
-
   <main class="main-content">
-
     <section class="intro-section">
-
       <p class="section-label">
         TYPHOON
       </p>
-
       <h2>
         Select a country
       </h2>
-
       <p class="section-description">
         Access official typhoon monitoring, weather alerts, and impact information sources by country.
       </p>
-
     </section>
-
 
     <!-- =========================
          Country List
     ========================== -->
-
     <section class="country-list">
-
 
       <!-- =========================
            Korea
       ========================== -->
-
       <details class="country-box">
-
         <summary>
-
           <span class="country-name">
             🇰🇷 KOREA
           </span>
-
           <span class="country-arrow">
             +
           </span>
-
         </summary>
-
-
         <div class="country-content">
-
           <div class="source-grid">
-
-
+            <!-- KMA Typhoon - Korean -->
+            <a
+              href="https://www.weather.go.kr/w/hazard/typhoon/report.do"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="source-card"
+            >
+              <div class="source-top">
+                <h3>
+                  기상청 태풍정보
+                </h3>
+                <span class="external-arrow">
+                  ↗
+                </span>
+              </div>
+              <p>
+                태풍의 위치·이동경로·강도 및 전망 확인
+              </p>
+              <span class="source-type">
+                OFFICIAL · KMA
+              </span>
+            </a>
+            
+            <!-- KMA Typhoon - Eng -->
             <a
               href="https://www.kma.go.kr/neng/typhoon/typhoon-information.do"
               target="_blank"
               rel="noopener noreferrer"
               class="source-card"
             >
-
               <div class="source-top">
-
                 <h3>
-                  KMA Typhoon
+                  기상청 태풍정보 (영문)
                 </h3>
-
                 <span class="external-arrow">
                   ↗
                 </span>
-
               </div>
-
               <p>
-                Korea Meteorological Administration
+                태풍의 위치·이동 경로 및 주요 정보를 영문으로 확인
               </p>
-
               <span class="source-type">
-                Official
+                OFFICIAL · KMA · EN
               </span>
-
             </a>
-
-
           </div>
-
         </div>
-
       </details>
-
 
       <!-- =========================
            Taiwan
       ========================== -->
-
       <details class="country-box">
-
         <summary>
-
           <span class="country-name">
             🇹🇼 TAIWAN
           </span>
-
           <span class="country-arrow">
             +
           </span>
-
         </summary>
-
-
         <div class="country-content">
-
           <div class="source-grid">
-
-
             <!-- CWA Warning -->
             <a
               href="https://www.cwa.gov.tw/V8/E/P/Warning/W26.html"
@@ -179,29 +147,21 @@
               rel="noopener noreferrer"
               class="source-card"
             >
-
               <div class="source-top">
-
                 <h3>
-                  CWA Typhoon Warning
+                  대만 태풍 경보
                 </h3>
-
                 <span class="external-arrow">
                   ↗
                 </span>
-
               </div>
-
               <p>
-                Central Weather Administration
+                대만 경보 및 현재 태풍 정보 확인
               </p>
-
               <span class="source-type">
-                Official
+                OFFICIAL · CWA
               </span>
-
             </a>
-
 
             <!-- DGPA -->
             <a
@@ -210,29 +170,21 @@
               rel="noopener noreferrer"
               class="source-card"
             >
-
               <div class="source-top">
-
                 <h3>
-                  DGPA
+                  대만 휴교·휴업 정보
                 </h3>
-
                 <span class="external-arrow">
                   ↗
                 </span>
-
               </div>
-
               <p>
-                Work and school suspension information
+                태풍 등 재난 발생 시 학교·직장 휴업 여부 확인
               </p>
-
               <span class="source-type">
-                Impact
+                IMPACT · DGPA
               </span>
-
             </a>
-
 
             <!-- CWA County Weather -->
             <a
@@ -241,29 +193,21 @@
               rel="noopener noreferrer"
               class="source-card"
             >
-
               <div class="source-top">
-
                 <h3>
-                  CWA County Weather
+                  대만 지역별 기상정보
                 </h3>
-
                 <span class="external-arrow">
                   ↗
                 </span>
-
               </div>
-
               <p>
-                Local weather information
+                지역별 날씨·강수·기상 현황 확인
               </p>
-
               <span class="source-type">
-                Monitoring
+                MONITORING · CWAA
               </span>
-
             </a>
-
 
             <!-- THB 168 -->
             <a
@@ -272,29 +216,21 @@
               rel="noopener noreferrer"
               class="source-card"
             >
-
               <div class="source-top">
-
                 <h3>
-                  THB 168
+                  대만 도로·교통 정보
                 </h3>
-
                 <span class="external-arrow">
                   ↗
                 </span>
-
               </div>
-
               <p>
-                Road and transportation information
+                도로 통제·교통 상황 미 이동 영향 확인
               </p>
-
               <span class="source-type">
-                Impact
+                IMPACT · THB
               </span>
-
             </a>
-
 
             <!-- Taipower -->
             <a
@@ -303,61 +239,39 @@
               rel="noopener noreferrer"
               class="source-card"
             >
-
               <div class="source-top">
-
                 <h3>
-                  Taipower
+                  대만 정전·전력정보
                 </h3>
-
                 <span class="external-arrow">
                   ↗
                 </span>
-
               </div>
-
               <p>
-                Power outage and electricity information
+                정전 및 전력 공급 관련 정보 확인
               </p>
-
               <span class="source-type">
-                Impact
+                IMPACT · TAIPOWER
               </span>
-
             </a>
-
-
           </div>
-
         </div>
-
       </details>
-
 
       <!-- =========================
            Japan
       ========================== -->
-
       <details class="country-box">
-
         <summary>
-
           <span class="country-name">
             🇯🇵 JAPAN
           </span>
-
           <span class="country-arrow">
             +
           </span>
-
         </summary>
-
-
         <div class="country-content">
-
           <div class="source-grid">
-
-
             <!-- JMA Cyclone -->
             <a
               href="https://www.data.jma.go.jp/multi/cyclone/index.html?lang=kr"
@@ -365,29 +279,21 @@
               rel="noopener noreferrer"
               class="source-card"
             >
-
               <div class="source-top">
-
                 <h3>
-                  JMA Cyclone
+                  일본 기상청 태풍정보
                 </h3>
-
                 <span class="external-arrow">
                   ↗
                 </span>
-
               </div>
-
               <p>
-                Japan Meteorological Agency
+                태풍의 현재 위치·예상 경로·강도 정보 확인
               </p>
-
               <span class="source-type">
-                Official · Korean
+                OFFICIAL · JMA
               </span>
-
             </a>
-
 
             <!-- JMA Warning -->
             <a
@@ -396,29 +302,21 @@
               rel="noopener noreferrer"
               class="source-card"
             >
-
               <div class="source-top">
-
                 <h3>
-                  JMA Warning
+                  일본 기상특보
                 </h3>
-
                 <span class="external-arrow">
                   ↗
                 </span>
-
               </div>
-
               <p>
-                Weather warnings and advisories
+                지역별 기상 경보·주의보 및 재난 위험정보 확인
               </p>
-
               <span class="source-type">
-                Official
+                OFFICIAL · JMA
               </span>
-
             </a>
-
 
             <!-- JMA Rain -->
             <a
@@ -427,29 +325,21 @@
               rel="noopener noreferrer"
               class="source-card"
             >
-
               <div class="source-top">
-
                 <h3>
-                  JMA Rain Map
+                  일본 실시간 강우 지도
                 </h3>
-
                 <span class="external-arrow">
                   ↗
                 </span>
-
               </div>
-
               <p>
-                Rainfall monitoring
+                지역별 강수량 및 강우 현황을 지도에서 확인
               </p>
-
               <span class="source-type">
-                Monitoring
+                MONITORING · JMA
               </span>
-
             </a>
-
 
             <!-- River -->
             <a
@@ -458,29 +348,21 @@
               rel="noopener noreferrer"
               class="source-card"
             >
-
               <div class="source-top">
-
                 <h3>
-                  River Information
+                  일본 하천·홍수 정보
                 </h3>
-
                 <span class="external-arrow">
                   ↗
                 </span>
-
               </div>
-
               <p>
-                River and flood monitoring
+                하천 수위·범람 위험 및 홍수 영향정보 확인
               </p>
-
               <span class="source-type">
-                Impact
+                IMPACT · MLIT
               </span>
-
             </a>
-
 
             <!-- Road -->
             <a
@@ -489,67 +371,116 @@
               rel="noopener noreferrer"
               class="source-card"
             >
-
               <div class="source-top">
-
                 <h3>
-                  Road Information
+                  일본 도로·교통정보
                 </h3>
-
                 <span class="external-arrow">
                   ↗
                 </span>
-
               </div>
-
               <p>
-                Road closures and traffic conditions
+                도로 통제·교통 상황 및 이동 영향 확인
               </p>
-
               <span class="source-type">
-                Impact
+                IMPACT · MLIT
               </span>
-
             </a>
 
-
-            <!-- TEPCO -->
+            <!-- 도쿄 정전 -->
             <a
-              href="https://teideninfo.tepco.co.jp/"
+              href="https://teideninfo.tepco.co.jp"
               target="_blank"
               rel="noopener noreferrer"
               class="source-card"
             >
-
               <div class="source-top">
-
                 <h3>
-                  TEPCO Outage
+                  도쿄 정전정보
                 </h3>
-
                 <span class="external-arrow">
                   ↗
                 </span>
-
               </div>
-
               <p>
-                Power outage information
+                도쿄 및 수도권 지역의 정전·복구 현황 확인
               </p>
-
               <span class="source-type">
-                Impact
+                IMPACT · TEPCO
               </span>
-
             </a>
-
-
+            
+            <!-- 나고야 정전 -->
+            <a
+              href="https://powergrid.chuden.co.jp"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="source-card"
+            >
+              <div class="source-top">
+                <h3>
+                  나고야 정전정보
+                </h3>
+                <span class="external-arrow">
+                  ↗
+                </span>
+              </div>
+              <p>
+                나고야 및 중부 지역의 정력·정전정보 확인
+              </p>
+              <span class="source-type">
+                IMPACT · CHUBU
+              </span>
+            </a>
+            
+            <!-- 오사카 정전 -->
+            <a
+              href="https://www.kansai-td.co.jp/english/home/teiden-info/index.php"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="source-card"
+            >
+              <div class="source-top">
+                <h3>
+                  오사카 정전정보
+                </h3>
+                <span class="external-arrow">
+                  ↗
+                </span>
+              </div>
+              <p>
+                오사카 및 간사이 지역의 정전·복구 현황 확인
+              </p>
+              <span class="source-type">
+                IMPACT · KANSAI
+              </span>
+            </a>
+            
+            <!-- 후쿠오카 정전 -->
+            <a
+              href="https://www.kyuden.co.jp/td_teiden/kyushu.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="source-card"
+            >
+              <div class="source-top">
+                <h3>
+                  후쿠오카 정전정보
+                </h3>
+                <span class="external-arrow">
+                  ↗
+                </span>
+              </div>
+              <p>
+                후쿠오카 및 규슈 지역의 정전·복구 현황 확인
+              </p>
+              <span class="source-type">
+                IMPACT · KYUSHU
+              </span>
+            </a>
           </div>
-
         </div>
-
       </details>
-
 
       <!-- =========================
            China
